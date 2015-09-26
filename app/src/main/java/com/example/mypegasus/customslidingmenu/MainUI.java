@@ -168,6 +168,7 @@ public class MainUI extends RelativeLayout {
         if(!mScroller.computeScrollOffset()) return;
         int tempX = mScroller.getCurrX();
         scrollTo(tempX, 0);
+        postInvalidate();
     }
 
     private Point point = new Point();
